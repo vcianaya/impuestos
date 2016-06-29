@@ -1,0 +1,178 @@
+.vnav2 {
+  width: 278px;
+  font: 11px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  text-align:left;
+  margin-left: -18px;
+}
+.vnav2 a {
+  display: block;
+  line-height: 25px;
+  text-decoration: none;
+}
+.vnav2 li:last-child .vnav-item2 {
+  border-bottom-color: #006;
+  border-top-color: #003;
+}
+.vnav2 li:last-child .vnav-subnav2 {
+  border-bottom-color: #000;
+}
+
+.vnav-item2 {
+  padding: 0 12px 6px 6px;
+  font-size: 11px;
+  color: #FFF;
+  background: #006;
+  border-bottom: 1px solid #FFF;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+}
+.vnav-item2:hover {
+  background:#FC3;
+}
+.active2 .vnav-item2, .vnav-item2:active {
+  color: #F2F0F0;
+  background: #272525;
+  border-bottom: 1px solid #FFF;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  -ms-border-radius:7px;
+  font-weight:bolder;
+}
+.active2 .vnav-item2:hover
+{
+	 font-size: 12px;
+}
+.active2 .vnav-item2 .vnav-counter2, .vnav-item2:active .vnav-counter2 {
+  background: #FFF;
+  color:#006;
+  font-weight:bolder;
+}
+.vnav-counter2 {
+  float: right;
+  margin-top: 6px;
+  padding: 0 6px;
+  line-height: 18px;
+  font-size: 10px;
+  background: #FFF;
+  border-radius: 9px;
+  color:#006;
+}
+
+.vnav-subnav2 {
+  display: none;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+  font: 11px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-weight: bolder;
+}
+.active2 .vnav-subnav2 {
+  display: block;
+}
+.vnav-subnav2 a {
+  font-size: 11px;
+  color: #003;
+  border-bottom: 1px solid #999;
+}
+.vnav-subnav2 a:hover {
+  background: rgba(254,182,69,1);
+  background: -moz-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,182,69,1)), color-stop(54%, rgba(241,231,103,1)), color-stop(100%, rgba(241,231,103,1)));
+  background: -webkit-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: -o-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: -ms-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb645', endColorstr='#f1e767', GradientType=1 );
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.vnav-subnav2 .vnav-counter2 {
+  color: #999;
+  background: #fcfcfc;
+}
+.vnav-subnav2 li:last-child a {
+  border-bottom-color: #FFF;
+}
+
+
+
+/*ESTILO DEL ACORDION*/
+menu{
+    padding:0;
+    list-style:none;
+    width:620px;
+    font-size:12px;
+    background:#c1c1c1;
+    border: 1px solid rgba(0,0,0,0.8);
+}
+ 
+.menu li a{
+    display: block;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    border-top: 1px solid rgba(255,255,255, 0.2);
+    background:#3e3f44;
+    text-decoration:none;
+    color:#FFF;
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+    filter: dropshadow(color=#000, offx=1, offy=0);
+    padding:2px;
+    padding-left:20px;
+}
+ 
+.menu li ul li a{
+    font-size:12px;
+    color:#0B0757;
+    text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+     
+}
+ 
+.menu li a:hover{
+    background:rgba(254,182,69,1);
+    -moz-transition: background 0.3s ease-in;
+    -webkit-transition: background 0.3s ease-in;
+    -o-transition: background 0.3s ease-in;
+}
+ 
+.menu ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:0;
+    overflow: hidden;
+    transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+}
+ 
+.menu li:hover ul{
+    height:100px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+ 
+.menu ul li a{
+    background:#fafafa;
+}
+ 
+.menu ul li a:hover {
+    background: none repeat scroll 0 0 #ccc;
+    color: #fff;
+    -moz-transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+}
+
+/*ESTILO DE TRANCICION DE IMAGENES*/
